@@ -70,7 +70,31 @@ table {
   *zoom: 1;
 }
 /*               End of Setup             */
+/*************************/ /*************************/
+body {
+  /* use the custom font like any other font */
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0 auto;
 
+}
+header {
+  margin: 0 auto;
+}
 nav {
   background-color: black;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+nav li {
+  display: inline-block;
+  margin: 0 auto;
+  width: 5%;
+  padding: 1px 5px 1px 0px;
+  list-style: none;
 }
