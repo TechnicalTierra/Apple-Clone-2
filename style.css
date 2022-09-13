@@ -121,28 +121,27 @@ body {/* use the custom font like any other font */
 /*  background-color: lightgrey;*/
 }
 
+
 /********** ********** header and navbar ********** **********/
 header {
 /*  width: 100%;*/
-  text-align: center; /* centered the nav icons */
+  text-align: center; /* centers the navbar (both are needed; don't delete)*/
   background-color: black;
 }
 nav {
 /*  background-color: blue;*/
-  max-width: 70%;
-  margin: 0 auto; /* centers navbar icons */
+  max-width: 1100px;
+  margin: 0 auto;  /* centers navbar icons (both are needed; don't delete) */
 }
 nav li {
   display: inline-block;
   width: 10%;
   list-style: none;
 }
-nav a {
-  text-decoration: none;
-}
-nav a:hover {
+li.nav-icons a:hover {
   color: yellow;
 }
+
 
 /********** ********** hero ********** **********/
 /***** hero text *****/
@@ -182,24 +181,70 @@ span > a {
 #hero_div {
   height:  600px;
   background: url("images/hero_iphone_13pro.jpg");
-/*  background-size: cover;*/
   text-align: center;
   margin: 0 auto;
   background-repeat: no-repeat;
-/*  background-attachment: fixed;*/
   background-position: center;
 }
-/*#hero_image { 1583px max width of the page (????) 
-  max-width: 1583px;
-  margin-auto: 0 auto;
-}*/
 
-div > img {
-  display: inline-block;
-}
+
 /********** ********** sub hero ********** **********/
+#sub_hero_div {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.col-3{
+  display: inline-block;
+  width: 25%;
+  padding-left: 2px;
+  padding-right: 2px;
+  height: 200px;
+  background-size: cover;
+}
+ 
+#watch_sub-hero_image {
+  background: url("images/watch_large.jpg");
+}
+#ipad_sub-hero_image {
+  background: url("images/ipad_pro_large.jpg");
+}
+#accessories_sub-hero_image {
+  background: url("images/accessories_large.jpg");
+}
+#macbook_sub-hero_image {
+  background: url("images/macbook_large.jpg");
+}
+/***** AC wall plug *****/
+#ac_wall_plug_div {
+  text-align: center;
+  margin:  25px auto;
+}
+#ac_wall_plug {
+  text-decoration: none;
+  color: #08c;
+  font-size: 19px;
+}
 
 /********** ********** footer ********** ***********/
-
-
+footer {
+  background-color: #e7e7e7;
+  padding-bottom: 35px;
+  font-size: 14px;
+}
+footer a {
+  text-decoration: none;
+}
+#footer_container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 20px;
+}
+.footer_column {
+  display: inline-block;
+  width: 19%;
+}
+.footer_heading {
+  font-weight: bold;
+}
 /********** ********** media queries ********** **********/
