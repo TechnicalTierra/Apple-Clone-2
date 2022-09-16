@@ -137,9 +137,17 @@ nav li {
   display: inline-block;
   width: 10%;
   list-style: none;
+
+}
+.nav-icons {
+  
+}
+li.nav-icons a: {
+
 }
 li.nav-icons a:hover {
   color: yellow;
+  opacity: 1;
 }
 
 
@@ -202,21 +210,24 @@ span > a {
   padding-left: 2px;
   padding-right: 2px;
   height: 200px;
-/*  background-size: cover;*/
-  background-position: center;
+/*  background-position: center;*/
 }
  
 #watch_sub-hero_image {
-  background: url("images/watch_large.jpg");
+  background: url("images/watch_large.jpg")
+  center center no-repeat;
 }
 #ipad_sub-hero_image {
-  background: url("images/ipad_pro_large.jpg");
+  background: url("images/ipad_pro_large.jpg")
+  center center no-repeat;
 }
 #accessories_sub-hero_image {
   background: url("images/accessories_large.jpg");
+  center center no-repeat;
 }
 #macbook_sub-hero_image {
-  background: url("images/macbook_large.jpg");
+  background: url("images/macbook_large.jpg")
+  center center no-repeat;
 }
 /***** AC wall plug *****/
 #ac_wall_plug_div {
