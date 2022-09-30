@@ -51,7 +51,7 @@ table {
 
 /*                 Setup                  */
 
-/*               Borderbox                */
+/*               Border box                */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -137,12 +137,6 @@ nav li {
   display: inline-block;
   width: 10%;
   list-style: none;
-
-}
-.nav-icons {
-  
-}
-li.nav-icons a: {
 
 }
 li.nav-icons a:hover {
@@ -271,7 +265,7 @@ footer a {
 
 .footer_column li {
   padding-top: 3px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 footer a {
@@ -293,9 +287,13 @@ footer a:hover {
 #copyright_div {
   float: left;
 }
+#copyright {
+  padding-right: 15px;
+}
+
 .copyright-link {
   /* border-right:#e7e7e7; */
-  color: rgb(105, 102, 102);
+  color: rgb(99, 90, 90);
   border-right: solid 1px;
   margin-right: 5px;
 }
@@ -313,7 +311,13 @@ hr {
 /*****  *****/
 #usa_div {
   float: right;
-  
 }
+ #usa-flag {
+  vertical-align: middle; /* aligns the flag image with the 'United States'*/
+  padding-right: 2px;
+} 
+/* #usa_div_link a:hover {
+  text-decoration-style: black;
+} */
 
 /********** ********** media queries ********** **********/
