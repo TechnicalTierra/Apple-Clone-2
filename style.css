@@ -139,9 +139,10 @@ nav li {
   list-style: none;
 
 }
-li.nav-icons a:hover {
-  color: yellow;
-  opacity: 1;
+/***** do Dora the explorer dance because I DID IT *****/
+li.nav-icons img:hover {
+  opacity: 0.55;
+  transition: .2s ease;
 }
 
 
@@ -198,13 +199,10 @@ span > a {
 .col-3 {
   display: inline-block;
   width: 25%;
-  padding-left: 2px;
-  padding-right: 2px;
+  /* padding-left: 2px;
+  padding-right: 2px; */
   height: 200px;
 }
-.sub_hero_img {
-  padding: 0 2.5px 0;
-} 
 
 #watch_sub-hero_image {
   background: url("images/watch_large.jpg")
@@ -213,10 +211,12 @@ span > a {
 #ipad_sub-hero_image {
   background: url("images/ipad_pro_large.jpg")
   center center no-repeat;
+  padding: 5px;
 }
 #accessories_sub-hero_image {
   background: url("images/accessories_large.jpg")
   center center no-repeat;
+  padding-right: 5px;
 }
 #macbook_sub-hero_image {
   background: url("images/macbook_large.jpg")
