@@ -111,7 +111,7 @@ table {
   margin: 0 auto;
 }
 body {/* use the custom font like any other font */
-  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica","Arial", sans-serif;
   width: 100%;
 }
 
@@ -139,9 +139,9 @@ nav li {
   list-style: none;
 
 }
-/***** do Dora the explorer dance because I DID IT *****/
+/***** do Dora the explorer dance because I DID IT (this made the hovered navbar icons turn grey) *****/
 li.nav-icons img:hover {
-  opacity: 0.55;
+  opacity: 0.50;
   transition: .2s ease;
 }
 
@@ -199,8 +199,6 @@ span > a {
 .col-3 {
   display: inline-block;
   width: 25%;
-  /* padding-left: 2px;
-  padding-right: 2px; */
   height: 200px;
 }
 
