@@ -280,7 +280,7 @@ footer a:hover {
   text-decoration: underline;
   color: black;
 }
-/***** under footer columns *****/
+/***** text below footer columns, but above the hr *****/
 #legal-links {
   margin-top: 5px;
   padding-top: 5px;
@@ -307,7 +307,7 @@ hr {
   margin-bottom: 10px;
 }
 
-/*****  *****/
+/*****  USA flag image and US text *****/
 #usa_div {
   float: right;
 }
