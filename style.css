@@ -181,7 +181,7 @@ span > a {
 }
 /***** hero image *****/
 #hero_div {
-  height:  600px;
+  height: 600px;
   background: url("images/hero_iphone_13pro.jpg");
   text-align: center;
   margin: 0 auto;
@@ -193,10 +193,7 @@ span > a {
 /********** ********** sub hero ********** **********/
 #sub_hero_div {
   margin: 20px auto 0;
-/*  display: flex;
-  justify-content: space-around;*/
   text-align: center;
-
 }
 .col-3 {
   display: inline-block;
@@ -204,9 +201,11 @@ span > a {
   padding-left: 2px;
   padding-right: 2px;
   height: 200px;
-/*  background-position: center;*/
 }
- 
+.sub_hero_img {
+  padding: 0 2.5px 0;
+} 
+
 #watch_sub-hero_image {
   background: url("images/watch_large.jpg")
   center center no-repeat;
@@ -223,6 +222,7 @@ span > a {
   background: url("images/macbook_large.jpg")
   center center no-repeat;
 }
+
 /***** AC wall plug *****/
 #ac_wall_plug_div {
   text-align: center;
@@ -233,13 +233,18 @@ span > a {
   color: #08c;
   font-size: 19px;
 }
+#ac_wall_plug:hover {
+  text-decoration: underline;
+}
+
 
 /********** ********** footer ********** ***********/
 footer {
   background-color: #e7e7e7;
   padding-bottom: 50px;
-  font-size: 13px;
+  font-size: 12px;
   color: rgb(105, 102, 102);
+  margin-top: 20px;
 }
 footer a {
   text-decoration: none;
@@ -262,42 +267,36 @@ footer a {
 .sub-heading {
   margin-top: 15px;
 }
-
 .footer_column li {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-
 footer a {
   text-decoration-style: none;
   color: rgb(105, 102, 102);
   font-size: 12px;
 }
-
 footer a:hover {
   text-decoration: underline;
+  color: black;
 }
-
+/***** under footer columns *****/
 #legal-links {
   margin-top: 5px;
   padding-top: 5px;
   font-size: 12px;
 }
-
 #copyright_div {
   float: left;
 }
 #copyright {
   padding-right: 15px;
 }
-
 .copyright-link {
-  /* border-right:#e7e7e7; */
   color: rgb(99, 90, 90);
   border-right: solid 1px;
   margin-right: 5px;
 }
-
 .legal-link-blue {
   color: #08c;
 }
@@ -316,8 +315,5 @@ hr {
   vertical-align: middle; /* aligns the flag image with the 'United States'*/
   padding-right: 2px;
 } 
-/* #usa_div_link a:hover {
-  text-decoration-style: black;
-} */
 
 /********** ********** media queries ********** **********/
