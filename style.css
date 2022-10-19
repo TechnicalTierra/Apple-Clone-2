@@ -115,10 +115,12 @@ body {/* use the custom font like any other font */
   width: 100%;
 }
 
-.container {
+.container-fluid {
   width: 100%;
   margin: 0 auto;
 /*  background-color: lightgrey;*/
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 
