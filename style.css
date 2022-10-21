@@ -138,15 +138,14 @@ nav {
 }
 nav ul {
   margin: 0 auto;
-  display: inline-block;
+  display: inline-block; 
 }
 nav li {
   display: inline-block;
   width: 15%;
   list-style: none;
-  padding-left: 2%;
-  padding-right: 2%;
-
+  padding-left: 1em; /*DON'T % EVER again. stick to the rivers and the lakes that you are used to (a.k.a. em or rem or pixels) */
+  padding-right: 1em;
 }
 /***** do Dora the explorer dance because I DID IT (this made the hovered navbar icons turn grey) *****/
 li.nav-icons img:hover {
