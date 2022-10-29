@@ -144,8 +144,8 @@ nav li {
   display: inline-block;
   width: 15%;
   list-style: none;
-  padding-left: 1em; /*DON'T % EVER again. stick to the rivers and the lakes that you are used to (a.k.a. em or rem or pixels) */
-  padding-right: 1em;
+  padding-left: 1.7em; /*DON'T % EVER again. stick to the rivers and the lakes that you are used to (a.k.a. em or rem or pixels) */
+  padding-right: 1.7em;
 }
 /***** do Dora the explorer dance because I DID IT (this made the hovered navbar icons turn grey) *****/
 li.nav-icons img:hover {
@@ -259,6 +259,9 @@ footer a {
   margin: 0 auto;
   max-width: 1100px;
   padding-top: 20px;
+  padding-right: 0px;
+  /* padding-left: 70px; */
+  margin-bottom: 50px;
 }
 .footer_column {
   display: inline-block;
