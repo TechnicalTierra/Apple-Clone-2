@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Border box                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+
+/*************************/ /*************************/
+
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+
+/************************* start of css *************************/
+*, html, body {
+  margin: 0 auto;
+}
+body {/* use the custom font like any other font */
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica","Arial", sans-serif;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: lightgrey;*/
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+/********** ********** header and navbar ********** **********/
+header {
+  text-align: center; 
+  background-color: black;
+}
+nav {
+  max-width: 1100px;
+  margin: 0 auto;   
+}
+.navbar-expand-lg {
+  justify-content: center;
+}
+nav ul {
+  margin: 0 auto;
+  display: inline-block; 
+}
+nav li {
+  display: inline-block;
+  width: 15%;
+  list-style: none;
+  padding-left: 1.7em; /*DON'T % EVER again. stick to the rivers and the lakes that you are used to (a.k.a. em or rem or pixels) */
+  padding-right: 1.7em;
+}
+/***** do Dora the explorer dance because I DID IT (this made the hovered navbar icons turn grey) *****/
+li.nav-icons img:hover {
+  opacity: 0.50;
+  transition: .2s ease;
+}
+
+
+/********** ********** hero ********** **********/
+/***** hero text *****/
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+div > h1, div > h2 {
+  margin-bottom: 13px;
+}
+#hero_text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+span.hero_links {
+  font-size: 24px;
+  font-weight: 300;
+}
+span.hero_links a {
+  text-decoration: none;
+  color: #08c;
+}
+span.hero_links a:hover {
+  color: black;
+  text-decoration: underline;
+}
+span > a {
+  padding-right: 10px;
+}
+/***** hero image *****/
+#hero_div {
+  height: 600px;
+  background: url("images/hero_iphone_13pro.jpg");
+  text-align: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/********** ********** sub hero ********** **********/
+#sub_hero_div {
+  margin: 20px auto 0;
+  text-align: center;
+}
+.col-3 {
+  display: inline-block;
+  width: 25%;
+  height: 200px;
+}
+
+#watch_sub-hero_image {
+  background: url("images/watch_large.jpg")
+  center center no-repeat;
+}
+#ipad_sub-hero_image {
+  background: url("images/ipad_pro_large.jpg")
+  center center no-repeat;
+  padding: 5px;
+}
+#accessories_sub-hero_image {
+  background: url("images/accessories_large.jpg")
+  center center no-repeat;
+  padding-right: 5px;
+}
+#macbook_sub-hero_image {
+  background: url("images/macbook_large.jpg")
+  center center no-repeat;
+}
+
+/***** AC wall plug *****/
+#ac_wall_plug_div {
+  text-align: center;
+  margin:  25px auto;
+}
+#ac_wall_plug {
+  text-decoration: none;
+  color: #08c;
+  font-size: 19px;
+}
+#ac_wall_plug:hover {
+  text-decoration: underline;
+}
+
+
+/********** ********** footer ********** ***********/
+footer {
+  background-color: #e7e7e7;
+  padding-bottom: 50px;
+  font-size: 12px;
+  color: rgb(105, 102, 102);
+  margin-top: 20px;
+}
+footer a {
+  text-decoration: none;
+}
+#footer_container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 20px;
+  padding-right: 0px;
+  /* padding-left: 70px; */
+  margin-bottom: 50px;
+}
+.footer_column {
+  display: inline-block;
+  width: 19%;
+  vertical-align: top;
+}
+.footer_heading {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+.sub-heading {
+  margin-top: 15px;
+}
+.footer_column li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+footer a {
+  text-decoration-style: none;
+  color: rgb(105, 102, 102);
+  font-size: 12px;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+}
+/***** text below footer columns, but above the hr *****/
+#legal-links {
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+#copyright_div {
+  float: left;
+}
+#copyright {
+  padding-right: 15px;
+}
+.copyright-link {
+  color: rgb(99, 90, 90);
+  border-right: solid 1px;
+  margin-right: 5px;
+}
+.legal-link-blue {
+  color: #08c;
+}
+
+/***** hr *****/
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*****  USA flag image and US text *****/
+#usa_div {
+  float: right;
+}
+ #usa-flag {
+  vertical-align: middle; /* aligns the flag image with the 'United States'*/
+  padding-right: 2px;
+} 
+
+/********** ********** media queries ********** **********/
